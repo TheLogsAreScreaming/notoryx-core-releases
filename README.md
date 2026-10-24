@@ -122,6 +122,30 @@ Newer versions install over older ones and keep your data. (Test builds before 1
 3. Open it. The first time, macOS says it can't check the app for malicious software, because it isn't notarized. Click **Done**, then go to **System Settings → Privacy & Security** and click **Open Anyway** next to "NOTORYX Core was blocked". You do this once per version.
 4. Allow Bluetooth when asked.
 
+## Local mesh settings
+
+NOTORYX Core knows the radio settings local meshes have agreed on, and offers to switch your radio when they don't match. The live list is [`regional_presets.json`](regional_presets.json) in this repository: the app checks it every 12 hours and also ships a built-in copy.
+
+To add or update your area, [open an issue](../../issues/new) with the area name, center and radius, frequency, bandwidth, spreading factor, coding rate and path-hash size, and say where the settings come from. Each entry looks like this:
+
+```json
+{
+  "id": "us-philadelphia",
+  "name": "Philadelphia",
+  "center": [39.9526, -75.1652],
+  "radiusKm": 100,
+  "frequencyMHz": 919.5,
+  "bandwidthKHz": 500,
+  "spreadingFactor": 10,
+  "codingRate": 5,
+  "pathHashBytes": 2,
+  "updated": "2026-10-17",
+  "notes": "Where this comes from and anything people should know."
+}
+```
+
+Changing `updated` is what tells the app the settings changed.
+
 ## About
 
 NOTORYX Core is an independent community app. It is not an official MeshCore app and doesn't imply endorsement by MeshCore; see [meshcore.io](https://meshcore.io/). It builds on the open-source [MeshCore Open](https://github.com/zjs81/meshcore-open) project (MIT). License text and third-party notices are in the app's **Open source licenses** screen.
