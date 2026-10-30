@@ -119,6 +119,12 @@ Each release also has `SHA256SUMS-Android.txt` and `SHA256SUMS-macOS.txt`. To ch
 
 ## Install on Android
 
+**Easiest: get updates automatically with [Obtainium](https://obtainium.imranr.dev/).** On your phone, install Obtainium, then tap the badge below. It adds NOTORYX Core with pre-releases included and the Android APK picked out, and tells you when a new build is out.
+
+<p><a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.bastionmesh.bastion%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FTheLogsAreScreaming%2Fnotoryx-core-releases%22%2C%22author%22%3A%22TheLogsAreScreaming%22%2C%22name%22%3A%22NOTORYX%20Core%22%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Atrue%2C%5C%22apkFilterRegEx%5C%22%3A%5C%22arm64-v8a%5C%5C%5C%5C.apk%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionDetection%5C%22%3Atrue%7D%22%7D"><img src="images/badge_obtainium.png" width="161" alt="Get it on Obtainium"></a></p>
+
+Or install the APK yourself:
+
 1. On your phone, open the latest release and download the `.apk`.
 2. Open the file. If Android asks, allow installs from your browser or file manager.
 3. Open NOTORYX Core and allow **Bluetooth**, **location** and **notifications** when asked.
