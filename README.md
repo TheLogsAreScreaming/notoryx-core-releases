@@ -26,7 +26,7 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **It helps you find people.** A directory of public channels, channels heard on air that you haven't joined, and the #channels active online right now, each one tap to join.
 - **It reaches past the horizon.** The optional MQTT bridge shows MeshCore traffic from beyond radio range, clearly labeled **via MQTT** so it never pretends to be a radio repeat.
 - **It shows you where the mesh reaches.** Wardrive maps which repeaters hear you as you drive or hike, and telemetry badges put battery, temperature, humidity and pressure right on the map.
-- **It looks the part.** The Frosted ember look puts see-through glass over a warm glow. Four themes, including Autumn Frost and Red light to keep your night vision, all checked for readable contrast.
+- **It looks the part.** The Frosted ember look puts see-through glass over a warm glow. Five themes, including Autumn Frost, Red light to keep your night vision and a color-blind safe Okabe-Ito theme, all checked for readable contrast.
 - **It speaks your language.** 18 languages.
 - **It runs your whole kit.** Repeaters, room servers, sensors, access control, a command line and Wi-Fi setup are all in one app.
 - **It's free and open source** (MIT), and built on the community [MeshCore Open](https://github.com/zjs81/meshcore-open) project.
@@ -93,7 +93,12 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 ### Backups and everyday comfort
 - **Encrypted backup** of settings, contacts and keys, with optional chat history.
 - **Battery saver**, adjustable refresh rate and app-icon shortcuts.
-- **Four themes:** Blaze (default), Autumn Frost (slate, pine and amber), Bubble Gum (pastel, light) and Red light (keeps your night vision), all checked for readable contrast.
+- **Five themes:** Blaze (default), Autumn Frost (slate, pine and amber), Bubble Gum (rose and hot pink), Red light (keeps your night vision) and Okabe-Ito (color-blind safe, on black), all checked for readable contrast.
+- **Color-blind safe colors:** node types on the map and in lists (people, repeaters, rooms and sensors) use the [Okabe-Ito palette](https://jfly.uni-koeln.de/color/), whose colors stay distinct with the common forms of color blindness. The **Okabe-Ito** theme goes further: good, warning and bad signal are blue-green, yellow and vermillion instead of green and red.
+
+  | Orange | Sky blue | Bluish green | Yellow | Blue | Vermillion | Reddish purple | Black |
+  |---|---|---|---|---|---|---|---|
+  | `#E69F00` | `#56B4E9` | `#009E73` | `#F0E442` | `#0072B2` | `#D55E00` | `#CC79A7` | `#000000` |
 - Available in **18 languages**. A few screens (parts of bot settings and the local mesh settings banner) are still in English only.
 
 <p align="center">
@@ -108,12 +113,13 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 </p>
 
 <p align="center">
-  <img src="images/home.png" width="190" alt="Blaze theme">
-  <img src="images/home_autumn_frost.png" width="190" alt="Autumn Frost theme">
-  <img src="images/home_bubble_gum.png" width="190" alt="Bubble Gum theme">
-  <img src="images/home_red_light.png" width="190" alt="Red light theme">
+  <img src="images/home.png" width="150" alt="Blaze theme">
+  <img src="images/home_autumn_frost.png" width="150" alt="Autumn Frost theme">
+  <img src="images/home_bubble_gum.png" width="150" alt="Bubble Gum theme">
+  <img src="images/home_red_light.png" width="150" alt="Red light theme">
+  <img src="images/home_okabe_ito.png" width="150" alt="Okabe-Ito color-blind safe theme">
 </p>
-<p align="center"><em>Blaze · Autumn Frost · Bubble Gum · Red light</em></p>
+<p align="center"><em>Blaze · Autumn Frost · Bubble Gum · Red light · Okabe-Ito</em></p>
 
 > NOTORYX Core is a pre-release. It's tested in automated tests and a mesh simulator but not yet on a wide range of phones and radios. It is not a replacement for an emergency service or a satellite messenger.
 
