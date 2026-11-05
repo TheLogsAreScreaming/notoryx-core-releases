@@ -25,7 +25,8 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **It gets your radio on the right settings.** MeshCore's community presets (USA, Canada, EU/UK, Australia and more) are built in, with the one for your country suggested first. It also knows settings local meshes have agreed on, and warns you when your radio doesn't match.
 - **It helps you find people.** A directory of public channels, channels heard on air that you haven't joined, and the #channels active online right now, each one tap to join.
 - **It reaches past the horizon.** The optional MQTT bridge shows MeshCore traffic from beyond radio range, clearly labeled **via MQTT** so it never pretends to be a radio repeat.
-- **It looks the part.** The Frosted ember look puts see-through glass over a warm glow. Four themes, including Red light to keep your night vision and Alpine day for bright snow, all checked for readable contrast.
+- **It shows you where the mesh reaches.** Wardrive maps which repeaters hear you as you drive or hike, and telemetry badges put battery, temperature, humidity and pressure right on the map.
+- **It looks the part.** The Frosted ember look puts see-through glass over a warm glow. Four themes, including Autumn Frost and Red light to keep your night vision, all checked for readable contrast.
 - **It speaks your language.** 18 languages.
 - **It runs your whole kit.** Repeaters, room servers, sensors, access control, a command line and Wi-Fi setup are all in one app.
 - **It's free and open source** (MIT), and built on the community [MeshCore Open](https://github.com/zjs81/meshcore-open) project.
@@ -34,10 +35,11 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 
 ### Safety and trips
 - **SOS:** hold for 2 seconds to send your radio's position to your trip contacts (and an optional channel). It repeats every 5 minutes until someone replies or you stop it. **I'm safe** sends an all-clear.
-- **Check-ins:** I'm OK, At camp, Delayed and Heading back. See who each one reached and resend to anyone it missed.
+- **Check-ins:** I'm OK, At camp, Delayed and Heading back. See who each one reached and resend to anyone it missed. Check-ins can also go to a team or SAR channel, signed with your radio's key.
 - **Check-in reminders:** a phone notification when you're due to check in, even when the app is closed.
 - **Overdue alerts:** a warning when a trip contact goes quiet for longer than you set.
 - **Signed SOS:** a channel SOS carries a signature from your radio's key. You can sign every channel post too; a post whose signature doesn't check out shows as unverified, and other apps just see the normal message.
+- **SOS relay** (optional, off by default): when your radio hears an SOS straight from the sender and no repeater passes it on, NOTORYX sends it once more so it can reach a repeater the sender can't. Needs radio firmware v1.16 or newer, and is not yet field-tested on radios.
 - **Plan your trip:** choose up to six contacts. Trip briefs, a **Field Log** of everything sent and received, readiness checks and optional automations.
 - **Home:** radio battery, signal and node count at a glance, your radio's own **sensors** (voltage, temperatures, GPS, light), check-in, SOS and field tools.
 - **Android home-screen widget:** radio status, battery and unread count, with one-tap Check in and SOS.
@@ -48,7 +50,8 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **Link previews** (off by default).
 - **Message search** across everything saved on the device.
 - **Drafts** kept for each chat.
-- **Share your position or a contact** from the message box. Received contacts can be added in one tap.
+- **Share your position or a contact** from the message box. Received contacts can be added in one tap, and **Add contact from clipboard** accepts links, adverts (even wrapped across lines) and bare public keys.
+- **Region tags:** a channel post scoped to a region shows it next to the time, for example **📍 ct**.
 - **Read messages aloud** (optional) and on-device translation.
 - **Area-limited channel messages** that stay within a radius of you (needs radios running flood-corridor firmware).
 - Optional auto-delete of old channel messages.
@@ -56,6 +59,8 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 
 ### Maps, paths and coverage
 - Live mesh map with **offline map packs**.
+- **Map telemetry:** battery, temperature, humidity or pressure badges on the map. Readings dim after an hour and hide after a day, and the map remembers your choice.
+- **Wardrive:** ping every 20 s to 2 min as you move and map which repeaters heard you, and how well, both ways. Pings use your phone's GPS, the map follows you, and drives are saved.
 - **Path graph:** every path you've heard, drawn as flows from far repeaters to you, with the busiest repeaters ranked. Short 1-byte hops are matched to a specific repeater using longer paths.
 - **Route intelligence** that handles 1-, 2- and 3-byte hop IDs, ranks the best repeaters you hear directly, plus path discovery and traces.
 - **Observer reach:** see which online observers heard your message, how many hops it took and the best signal. Unknown repeaters can be named online. Both use a CoreScope analyzer you choose.
@@ -73,7 +78,7 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - Reconnects on its own when your network comes back.
 
 ### Your radios
-- Connect over **Bluetooth, USB or TCP/IP**, and reconnect to your last radio automatically.
+- Connect over **Bluetooth, USB or TCP/IP**. Turn on **Connect to my radio automatically** to reconnect to your last radio when the app opens.
 - **Connections dashboard:** radio and MQTT status side by side, device and firmware details, and a clear prompt when Bluetooth is off.
 - Radio overview with battery, firmware and LoRa settings, live radio stats and a noise-floor chart.
 - **Radio presets:** MeshCore's community catalogue with search and a suggestion for your country. Choosing one keeps your transmit power.
@@ -88,7 +93,7 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 ### Backups and everyday comfort
 - **Encrypted backup** of settings, contacts and keys, with optional chat history.
 - **Battery saver**, adjustable refresh rate and app-icon shortcuts.
-- **Four themes:** Blaze (default), Topo night, Red light (keeps your night vision) and Alpine day (for bright sun), all checked for readable contrast.
+- **Four themes:** Blaze (default), Autumn Frost (slate, pine and amber), Bubble Gum (pastel, light) and Red light (keeps your night vision), all checked for readable contrast.
 - Available in **18 languages**. A few screens (parts of bot settings and the local mesh settings banner) are still in English only.
 
 <p align="center">
@@ -99,12 +104,16 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 </p>
 
 <p align="center">
-  <img src="images/home.png" width="190" alt="Blaze theme">
-  <img src="images/home_topo_night.png" width="190" alt="Topo night theme">
-  <img src="images/home_red_light.png" width="190" alt="Red light theme">
-  <img src="images/home_alpine_day.png" width="190" alt="Alpine day theme">
+  <img src="images/channel_directory.png" width="190" alt="Channel directory: local, emergency and active channels">
 </p>
-<p align="center"><em>Blaze · Topo night · Red light · Alpine day</em></p>
+
+<p align="center">
+  <img src="images/home.png" width="190" alt="Blaze theme">
+  <img src="images/home_autumn_frost.png" width="190" alt="Autumn Frost theme">
+  <img src="images/home_bubble_gum.png" width="190" alt="Bubble Gum theme">
+  <img src="images/home_red_light.png" width="190" alt="Red light theme">
+</p>
+<p align="center"><em>Blaze · Autumn Frost · Bubble Gum · Red light</em></p>
 
 > NOTORYX Core is a pre-release. It's tested in automated tests and a mesh simulator but not yet on a wide range of phones and radios. It is not a replacement for an emergency service or a satellite messenger.
 
