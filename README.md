@@ -61,6 +61,7 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - Live mesh map with **offline map packs**.
 - **Map telemetry:** battery, temperature, humidity or pressure badges on the map. Readings dim after an hour and hide after a day, and the map remembers your choice.
 - **Wardrive:** ping every 20 s to 2 min as you move and map which repeaters heard you, and how well, both ways. Pings use your phone's GPS, the map follows you, and drives are saved.
+- **Network scan** (More → Networks): find MeshCore networks nearby. A radio only hears networks on its exact settings, so a scan switches yours to each preset in turn (the ones in your band by default, plus networks you've saved), listens for 30–90 s, and switches back. Each network heard is logged with the time, place, signal and the node names from its adverts, so you can map it, export CSV or GPX, save it, or join it with one tap. You're off your own mesh while it scans, so it won't run during an SOS or a trip. New in rc.28 and not yet tested on a wide range of radios.
 - **Path graph:** every path you've heard, drawn as flows from far repeaters to you, with the busiest repeaters ranked. Short 1-byte hops are matched to a specific repeater using longer paths.
 - **Route intelligence** that handles 1-, 2- and 3-byte hop IDs, ranks the best repeaters you hear directly, plus path discovery and traces.
 - **Observer reach:** see which online observers heard your message, how many hops it took and the best signal. Unknown repeaters can be named online. Both use a CoreScope analyzer you choose.
@@ -110,6 +111,7 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 
 <p align="center">
   <img src="images/channel_directory.png" width="190" alt="Channel directory: local, emergency and active channels">
+  <img src="images/networks.png" width="190" alt="Networks: scan for nearby networks and keep a log">
 </p>
 
 <p align="center">
