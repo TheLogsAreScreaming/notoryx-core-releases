@@ -182,6 +182,8 @@ To add or update your area, [open an issue](../../issues/new) with the area name
 
 Changing `updated` is what tells the app the settings changed.
 
+Most areas in the list are worked out from the public [MeshCore map](https://map.meshcore.io), where node owners report their radio settings. These are areas where most nodes use something other than the usual settings for that part of the world, such as Phoenix on 908.205 MHz / 62.5 / SF9. These entries have `"source": "map"` and a node count. They're labelled in the app as reported, not checked on air, and they leave your radio's path-hash size alone. Hand-made entries like Philadelphia's are kept when the list is refreshed. Map areas show up from the first release after rc.29; earlier versions keep the list they have.
+
 ## About
 
 NOTORYX Core is an independent community app. It is not an official MeshCore app and doesn't imply endorsement by MeshCore; see [meshcore.io](https://meshcore.io/). It builds on the open-source [MeshCore Open](https://github.com/zjs81/meshcore-open) project (MIT). License text and third-party notices are in the app's **Open source licenses** screen.
