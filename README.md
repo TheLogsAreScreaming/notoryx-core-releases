@@ -8,6 +8,18 @@
 
 This repository hosts NOTORYX Core builds for Android and Mac. Get the latest from **[Releases](../../releases)**.
 
+## Upcoming: NOTORYX Core 10.0.0-rc.32
+
+**Release status:** rc.32 is being prepared. Downloadable builds will be linked here only after the signed Android and universal macOS packages have been verified and published.
+
+This update brings interactive **Field intelligence** (live radio health, activity history, node breakdowns, route reach and nearby repeaters), usable **Repeater tools** with filters and direct access to ping, antenna hunt, IDs and region setup, and deeper **Route Intelligence** with contact routes, reliability details and failure filtering. Tap a node to inspect its details and open the relevant map, chat or repeater controls.
+
+- **Source changes:** [PR #208](https://github.com/TheLogsAreScreaming/notoryx-core/pull/208) (merged).
+- **Version bump:** [PR #209](https://github.com/TheLogsAreScreaming/notoryx-core/pull/209) (`10.0.0-rc.32+84`).
+- **Release downloads:** [GitHub Releases](../../releases) — use the latest published version until rc.32 assets are available.
+
+
+
 <p align="center">
   <img src="images/home.png" width="190" alt="Home: radio readouts, check-in, SOS and field tools on frosted glass">
   <img src="images/chats.png" width="190" alt="Chats: channels and direct conversations">
