@@ -53,6 +53,7 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **Stop retrying** a direct message that's still being sent, and a note in a new chat that the other person has to add you as a contact before they can read and answer.
 - **Drafts** kept for each chat.
 - **Share your position or a contact** from the message box. Received contacts can be added in one tap, and **Add contact from clipboard** accepts links, adverts (even wrapped across lines) and bare public keys.
+- **Discovered contacts:** add one with a tap, or long-press to pick several (or **Add all shown**) and add them together, up to the room left on your radio.
 - **Region tags:** a channel post scoped to a region shows it next to the time, for example **📍 ct**.
 - **Read messages aloud** (optional) and on-device translation.
 - **Area-limited channel messages** that stay within a radius of you (needs radios running flood-corridor firmware).
