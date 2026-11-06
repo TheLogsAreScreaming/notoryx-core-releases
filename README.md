@@ -49,6 +49,8 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **Find channels:** a directory of public hashtag channels (local ones first), channels heard on air that you haven't joined, and **Active online** from an online analyzer, each with one-tap Join.
 - **Link previews** (off by default).
 - **Message search** across everything saved on the device.
+- **Quick messages:** ready-made replies like "On my way" or "At camp" from the message box menu. Edit the list to make it yours.
+- **Stop retrying** a direct message that's still being sent, and a note in a new chat that the other person has to add you as a contact before they can read and answer.
 - **Drafts** kept for each chat.
 - **Share your position or a contact** from the message box. Received contacts can be added in one tap, and **Add contact from clipboard** accepts links, adverts (even wrapped across lines) and bare public keys.
 - **Region tags:** a channel post scoped to a region shows it next to the time, for example **📍 ct**.
@@ -58,7 +60,7 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **Bot Mode:** auto-replies, keyword rules and commands like `!ping`, `!sun`, `!moon`, `!weather`, `!dice` and `!trace`, in direct messages and in the channels you choose, plus weather alerts posted to a channel.
 
 ### Maps, paths and coverage
-- Live mesh map with **offline map packs**.
+- Live mesh map with **offline map packs**, and a button to jump to your position (phone GPS, or your radio's).
 - **Map telemetry:** battery, temperature, humidity or pressure badges on the map. Readings dim after an hour and hide after a day, and the map remembers your choice.
 - **Wardrive:** ping every 20 s to 2 min as you move and map which repeaters heard you, and how well, both ways. Pings use your phone's GPS, the map follows you, and drives are saved.
 - **Network scan** (More → Networks): find MeshCore networks nearby. A radio only hears networks on its exact settings, so a scan switches yours to each preset in turn (the ones in your band by default, plus networks you've saved), listens for 30–90 s, and switches back. Each network heard is logged with the time, place, signal and the node names from its adverts, so you can map it, export CSV or GPX, save it, or join it with one tap. You're off your own mesh while it scans, so it won't run during an SOS or a trip. New in rc.28 and not yet tested on a wide range of radios.
@@ -86,6 +88,7 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **Local mesh settings:** knows the settings local meshes have agreed on (for example Philadelphia's 919.500 MHz preset), tells you when your radio doesn't match, and switches it after you confirm.
 - **Send your advert** zero-hop (only radios that hear you directly) or flooded across the mesh.
 - **Repeater and room-server tools:** login, status, neighbors, telemetry, settings, command line and **access control** (who can log in as admin, read & write, or read only).
+- **Forget last advert** on a contact, for a node whose adverts stopped updating after its clock was reset.
 - **Live sensor updates:** sensors push readings when they change.
 - **Command line and Wi-Fi setup** for your own radio. With permission, you can also use a trusted contact's command line.
 - **Field tools:** repeater ping (signal both ways), antenna hunt (clicks faster as a repeater gets louder), Repeater IDs, Region setup (US and Canada region trees) and a field guide.
