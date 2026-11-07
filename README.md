@@ -8,17 +8,11 @@
 
 This repository hosts NOTORYX Core builds for Android and Mac. Get the latest from **[Releases](../../releases)**.
 
-## Upcoming: NOTORYX Core 10.0.0-rc.32
+## Latest: NOTORYX Core 10.0.0-rc.33
 
-**Release status:** rc.32 is being prepared. Downloadable builds will be linked here only after the signed Android and universal macOS packages have been verified and published.
+**[Download rc.33](../../releases/tag/v10.0.0-rc.33)**: signed Android APK (ARM64) and universal macOS app, with SHA-256 checksums.
 
-This update brings interactive **Field intelligence** (live radio health, activity history, node breakdowns, route reach and nearby repeaters), usable **Repeater tools** with filters and direct access to ping, antenna hunt, IDs and region setup, and deeper **Route Intelligence** with contact routes, reliability details and failure filtering. Tap a node to inspect its details and open the relevant map, chat or repeater controls.
-
-- **Source changes:** [PR #208](https://github.com/TheLogsAreScreaming/notoryx-core/pull/208) (merged).
-- **Version bump:** [PR #209](https://github.com/TheLogsAreScreaming/notoryx-core/pull/209) (`10.0.0-rc.32+84`).
-- **Release downloads:** [GitHub Releases](../../releases) — use the latest published version until rc.32 assets are available.
-
-
+New in this update: tap your way through the **Path graph** and **Diagnostics**, a separate **Flood attempts** setting for direct messages, a **radio buzzer** switch, **meshcore://** contact links that open in the app, the SOS relay text in all 18 languages, and the glass look on more screens.
 
 <p align="center">
   <img src="images/home.png" width="190" alt="Home: radio readouts, check-in, SOS and field tools on frosted glass">
@@ -62,9 +56,10 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **Link previews** (off by default).
 - **Message search** across everything saved on the device.
 - **Quick messages:** ready-made replies like "On my way" or "At camp" from the message box menu. Edit the list to make it yours.
+- **Retries you control:** set how many direct tries a message gets, then how many flood tries after that (Settings → App Settings → Messaging).
 - **Stop retrying** a direct message that's still being sent, and a note in a new chat that the other person has to add you as a contact before they can read and answer.
 - **Drafts** kept for each chat.
-- **Share your position or a contact** from the message box. Received contacts can be added in one tap, and **Add contact from clipboard** accepts links, adverts (even wrapped across lines) and bare public keys.
+- **Share your position or a contact** from the message box. Received contacts can be added in one tap, tapping a `meshcore://` contact link in another app opens it in NOTORYX Core, and **Add contact from clipboard** accepts links, adverts (even wrapped across lines) and bare public keys.
 - **Discovered contacts:** add one with a tap, or long-press to pick several (or **Add all shown**) and add them together, up to the room left on your radio.
 - **Region tags:** a channel post scoped to a region shows it next to the time, for example **📍 ct**.
 - **Read messages aloud** (optional) and on-device translation.
@@ -77,7 +72,7 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **Map telemetry:** battery, temperature, humidity or pressure badges on the map. Readings dim after an hour and hide after a day, and the map remembers your choice.
 - **Wardrive:** ping every 20 s to 2 min as you move and map which repeaters heard you, and how well, both ways. Pings use your phone's GPS, the map follows you, and drives are saved.
 - **Network scan** (More → Networks): find MeshCore networks nearby. A radio only hears networks on its exact settings, so a scan switches yours to each network in turn and switches back. **Quick** (the default) sends one zero-hop discover ping on each and listens about 8 s, so a scan takes well under a minute; **Thorough** only listens, 30–90 s each, and also finds networks without a repeater in range. Each network heard is logged with the time, place, signal and its nodes, so you can map it, export CSV or GPX, save it, or join it with one tap. You're off your own mesh while it scans, so it won't run during an SOS or a trip.
-- **Path graph:** every path you've heard, drawn as flows from far repeaters to you, with the busiest repeaters ranked. Short 1-byte hops are matched to a specific repeater using longer paths.
+- **Path graph:** every path you've heard, drawn as flows from far repeaters to you, with the busiest repeaters ranked. Short 1-byte hops are matched to a specific repeater using longer paths. Tap a repeater in the chart or the list to see where its traffic comes from and goes.
 - **Route intelligence** that handles 1-, 2- and 3-byte hop IDs, ranks the best repeaters you hear directly, plus path discovery and traces.
 - **Observer reach:** see which online observers heard your message, how many hops it took and the best signal. Unknown repeaters can be named online. Both use a CoreScope analyzer you choose.
 - **Coverage hexagons:** record where your radio got through and upload to your own endpoints, with a privacy delay. **Track log** with GPX export.
@@ -103,6 +98,8 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **Repeater and room-server tools:** login, status, neighbors, telemetry, settings, command line and **access control** (who can log in as admin, read & write, or read only).
 - **Forget last advert** on a contact, for a node whose adverts stopped updating after its clock was reset.
 - **Live sensor updates:** sensors push readings when they change.
+- **Radio buzzer** on or off, on radios that have one (needs firmware with the buzzer command).
+- **Diagnostics:** every radio metric, channel, GPS fix and storage figure in one place; tap a value to copy it.
 - **Command line and Wi-Fi setup** for your own radio. With permission, you can also use a trusted contact's command line.
 - **Field tools:** repeater ping (signal both ways), antenna hunt (clicks faster as a repeater gets louder), Repeater IDs, Region setup (US and Canada region trees) and a field guide.
 - Join a community by scanning its QR code.
