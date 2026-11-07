@@ -8,11 +8,11 @@
 
 This repository hosts NOTORYX Core builds for Android and Mac. Get the latest from **[Releases](../../releases)**.
 
-## Latest: NOTORYX Core 10.0.0-rc.34
+## Latest: NOTORYX Core 10.0.0-rc.35
 
-**[Download rc.34](../../releases/tag/v10.0.0-rc.34)**: signed Android APK (ARM64) and universal macOS app, with SHA-256 checksums.
+**[Download rc.35](../../releases/tag/v10.0.0-rc.35)**: signed Android APK (ARM64) and universal macOS app, with SHA-256 checksums.
 
-New in this update: message history moves to a **database** (your existing history is copied over once), a live **RX log**, **Delivery details** that explain why a message did or didn't get through, **back-in-range alerts** for favorites, and **TCP and USB links that reconnect on their own**. Also fixed: one stuck send could block later messages to that contact.
+New in this update: **bolder themes**. Every theme now has its own second and third color for icons, highlights and the background glow, and cards have an accent-colored edge. Two new themes: **Bronzed Blush** (deep bronze, pale and soft pinks) and **Okabe-Ito Slate** (color-blind safe, on charcoal).
 
 <p align="center">
   <img src="images/home.png" width="190" alt="Home: radio readouts, check-in, SOS and field tools on frosted glass">
