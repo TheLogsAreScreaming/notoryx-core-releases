@@ -8,11 +8,11 @@
 
 This repository hosts NOTORYX Core builds for Android and Mac. Get the latest from **[Releases](../../releases)**.
 
-## Latest: NOTORYX Core 10.0.0-rc.36
+## Latest: NOTORYX Core 10.0.0-rc.37
 
-**[Download rc.36](../../releases/tag/v10.0.0-rc.36)**: signed Android APK (ARM64) and universal macOS app, with SHA-256 checksums.
+**[Download rc.37](../../releases/tag/v10.0.0-rc.37)**: signed Android APK (ARM64) and universal macOS app, with SHA-256 checksums.
 
-New in this update: repeater **Status, Neighbours and Telemetry show the route and wait time** and retry once on their own, a **warning when the radio's contact list is nearly full** with a way to free up space, **@mentions and blocking** in channels, and an **Android battery optimisation check** in Settings.
+New in this update: **eight colour themes**, including a **Seasonal** theme that follows the date, in a new picker with previews; colours across the app now follow your theme; Contacts show each contact's **path hash width**; and positions can be copied as **decimal, DMS, UTM or MGRS**.
 
 <p align="center">
   <img src="images/home.png" width="190" alt="Home: radio readouts, check-in, SOS and field tools on frosted glass">
