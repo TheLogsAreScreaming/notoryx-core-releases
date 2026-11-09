@@ -8,11 +8,11 @@
 
 This repository hosts NOTORYX Core builds for Android and Mac. Get the latest from **[Releases](../../releases)**.
 
-## Latest: NOTORYX Core 10.0.0-rc.41
+## Latest: NOTORYX Core 10.0.0-rc.42
 
-**[Download rc.41](../../releases/tag/v10.0.0-rc.41)**: signed Android APK (ARM64), a smaller Lite APK, and universal macOS app, with SHA-256 checksums.
+**[Download rc.42](../../releases/tag/v10.0.0-rc.42)**: signed Android APK (ARM64), a smaller Lite APK, and universal macOS app, with SHA-256 checksums.
 
-New in this update: **encryption for contacts, channel keys, waypoints, drafts and queued messages**, **Automation, Team setup and Bot settings in all 18 languages**, and **more screen-reader labels**. Not yet tested on real radios.
+New in this update: **offline trail routing** and **offline place search** over areas you download. Not yet tested on real devices.
 
 <p align="center">
   <img src="images/home.png" width="190" alt="Home: radio readouts, check-in, SOS and field tools on frosted glass">
