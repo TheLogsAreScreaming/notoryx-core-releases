@@ -8,11 +8,11 @@
 
 This repository hosts NOTORYX Core builds for Android and Mac. Get the latest from **[Releases](../../releases)**.
 
-## Latest: NOTORYX Core 10.0.0-rc.45
+## Latest: NOTORYX Core 10.0.0-rc.46
 
-**[Download rc.45](../../releases/tag/v10.0.0-rc.45)**: signed Android APK (ARM64), a smaller Lite APK, and universal macOS app, with SHA-256 checksums.
+**[Download rc.46](../../releases/tag/v10.0.0-rc.46)**: signed Android APK (ARM64), a smaller Lite APK, and universal macOS app, with SHA-256 checksums.
 
-New in this update: **encrypted backups can include your message history**, and restore adds it to your chats without duplicates. Not yet tested on real devices.
+New in this update: **Community moderation**, off until you turn it on. Report spam to NOTORYX moderators, see a Flagged label on nodes with an approved ban, and appeal a ban on your own node. Not yet tested on real devices.
 
 <p align="center">
   <img src="images/home.png" width="190" alt="Home: radio readouts, check-in, SOS and field tools on frosted glass">
