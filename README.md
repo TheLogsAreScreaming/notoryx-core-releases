@@ -14,7 +14,7 @@ This repository hosts NOTORYX Core builds for Android and Mac. Get the latest fr
 
 New since rc.47: **multiple radios**, **notifications for each channel** (all, mentions only or muted), an **airtime estimate** while you type, **KML and GeoJSON import**, a **firmware update guide**, and lower CPU use over USB on Mac. Not yet tested on real radios or phones.
 
-**Test build:** [10.1.0-rc.2](../../releases/tag/v10.1.0-rc.2) keeps queued messages until the radio takes them, shows which **radio features** are on in Diagnostics, checks **offline map tiles**, says how sure a **repeater battery trend** is, and adds **map as a list** for screen readers. It includes everything in [10.1.0-rc.1](../../releases/tag/v10.1.0-rc.1) (identity key backup, shared-ID memory, nearby-only online repeater names). Untested on radios; 10.0.0 stays the one to use.
+**Test build:** [10.1.0-rc.3](../../releases/tag/v10.1.0-rc.3) marks **failed sends in the Nodes list** with a fix one tap away, keeps the radio connected when you press **Back** on Home, learns better routes, and **resumes an SOS** after a restart. It includes everything in [10.1.0-rc.2](../../releases/tag/v10.1.0-rc.2) and [10.1.0-rc.1](../../releases/tag/v10.1.0-rc.1) (safer outbox, radio features in Diagnostics, offline map check, identity key backup and more). Untested on radios; 10.0.0 stays the one to use.
 
 **Report a problem:** [open an issue](../../issues).
 
