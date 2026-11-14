@@ -1,0 +1,53 @@
+name: Problem report
+description: Something in NOTORYX Core didn't work as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please don't paste channel keys, private keys, backup files or exact home locations.
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: More → About shows it, for example 10.1.0-rc.1 (build 104).
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options: [Android, Android Lite, macOS, Other]
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone or computer, and OS version
+      placeholder: Pixel 8, Android 16
+  - type: input
+    id: radio
+    attributes:
+      label: Radio and firmware
+      placeholder: Heltec V3, companion v1.18.0
+  - type: dropdown
+    id: link
+    attributes:
+      label: How the radio is connected
+      options: [Bluetooth, USB, Wi-Fi / TCP, Not connected]
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen again
+  - type: textarea
+    id: logs
+    attributes:
+      label: Diagnostics (optional)
+      description: More → Diagnostics → tap a row to copy it. Remove anything private first.
+      render: text
