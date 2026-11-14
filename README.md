@@ -8,11 +8,13 @@
 
 This repository hosts NOTORYX Core builds for Android and Mac. Get the latest from **[Releases](../../releases)**.
 
-## Latest: NOTORYX Core 10.0.0-rc.47
+## Latest: NOTORYX Core 10.0.0
 
-**[Download rc.47](../../releases/tag/v10.0.0-rc.47)**: signed Android APK (ARM64), a smaller Lite APK, and universal macOS app, with SHA-256 checksums.
+**[Download 10.0.0](../../releases/tag/v10.0.0)**, the first stable release: signed Android APK (ARM64), a smaller Lite APK, and universal macOS app, with SHA-256 checksums.
 
-New in this update: a shareable **trace card**, a **node journal** of every node heard, a **timeline** of mesh activity, **signed coverage reports** and **offline checklists**. Not yet tested on real radios or phones.
+New since rc.47: **multiple radios**, **notifications for each channel** (all, mentions only or muted), an **airtime estimate** while you type, **KML and GeoJSON import**, a **firmware update guide**, and lower CPU use over USB on Mac. Not yet tested on real radios or phones.
+
+**Report a problem:** [open an issue](../../issues).
 
 <p align="center">
   <img src="images/home.png" width="190" alt="Home: radio readouts, check-in, SOS and field tools on frosted glass">
