@@ -160,6 +160,14 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 </p>
 
 <p align="center">
+  <img src="images/background.png" width="190" alt="Background: theme glow, color, gradient, color blend or your own photo behind the glass">
+  <img src="images/theme_settings.png" width="190" alt="Theme settings with a different theme in dark mode">
+  <img src="images/checklist_run.png" width="190" alt="Before a trip checklist">
+  <img src="images/firmware_guide.png" width="190" alt="Guided firmware update">
+</p>
+<p align="center"><em>Captured on a phone running 10.1.0-rc.5 with the Night Ops theme.</em></p>
+
+<p align="center">
   <img src="images/home.png" width="150" alt="Blaze theme">
   <img src="images/home_neon_anarchy.png" width="150" alt="Neon Anarchy theme">
   <img src="images/home_tactical.png" width="150" alt="Tactical theme">
