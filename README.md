@@ -14,7 +14,7 @@ This repository hosts NOTORYX Core builds for Android and Mac. Get the latest fr
 
 New since rc.47: **multiple radios**, **notifications for each channel** (all, mentions only or muted), an **airtime estimate** while you type, **KML and GeoJSON import**, a **firmware update guide**, and lower CPU use over USB on Mac. Not yet tested on real radios or phones.
 
-**Test build:** [10.1.0-rc.3](../../releases/tag/v10.1.0-rc.3) marks **failed sends in the Nodes list** with a fix one tap away, keeps the radio connected when you press **Back** on Home, learns better routes, and **resumes an SOS** after a restart. It includes everything in [10.1.0-rc.2](../../releases/tag/v10.1.0-rc.2) and [10.1.0-rc.1](../../releases/tag/v10.1.0-rc.1) (safer outbox, radio features in Diagnostics, offline map check, identity key backup and more). Untested on radios; 10.0.0 stays the one to use.
+**Test build: [10.1.0-rc.6](../../releases/tag/v10.1.0-rc.6)** (15 November 2026, build 107) lists each nearby repeater once in "Best repeaters near you" and on the routes screen. With rc.1 to rc.5, it adds a **compass that points to any node**, a **photo or color for any node**, your own **background** behind the glass panels (color, gradient, color blend or photo), and the **Fresnel zone** on line of sight. It also marks **failed sends in the Nodes list** with a fix one tap away, keeps chats open while a dropped radio link reconnects, puts every coverage tool in **Map + coverage**, **resumes an SOS** after a restart, and adds identity key backup, a map-as-a-list view for screen readers and a safer offline queue (from rc.1 to rc.5). The rc.4 features were checked on one phone with one radio; the build as a whole is not yet tested on radios, so 10.0.0 stays the one to rely on.
 
 **Report a problem:** [open an issue](../../issues).
 
@@ -36,7 +36,8 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **It helps you find people.** A directory of public channels, channels heard on air that you haven't joined, and the #channels active online right now, each one tap to join.
 - **It reaches past the horizon.** The optional MQTT bridge shows MeshCore traffic from beyond radio range, clearly labeled **via MQTT** so it never pretends to be a radio repeat.
 - **It shows you where the mesh reaches.** Wardrive maps which repeaters hear you as you drive or hike, and telemetry badges put battery, temperature, humidity and pressure right on the map.
-- **It looks the part.** The Frosted ember look puts see-through glass over a warm glow. Five themes, including Autumn Frost, Red light to keep your night vision and a color-blind safe Okabe-Ito theme, all checked for readable contrast.
+- **It looks the part.** The Frosted ember look puts see-through glass over a warm glow, or over your own color, gradient or photo. Eight themes, including Night Ops to keep your night vision, a Seasonal theme and a color-blind safe Okabe-Ito theme, all checked for readable contrast.
+- **It runs more than one radio.** Stay connected to a handheld and a base station at once and switch between them.
 - **It speaks your language.** 18 languages.
 - **It runs your whole kit.** Repeaters, room servers, sensors, access control, a command line and Wi-Fi setup are all in one app.
 - **It's free and open source** (MIT), and built on the community [MeshCore Open](https://github.com/zjs81/meshcore-open) project.
@@ -52,6 +53,11 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **SOS relay** (optional, off by default): when your radio hears an SOS straight from the sender and no repeater passes it on, NOTORYX sends it once more so it can reach a repeater the sender can't. Needs radio firmware v1.16 or newer, and is not yet field-tested on radios.
 - **Plan your trip:** choose up to six contacts. Trip briefs, a **Field Log** of everything sent and received, readiness checks and optional automations.
 - **Home:** radio battery, signal and node count at a glance, your radio's own **sensors** (voltage, temperatures, GPS, light), check-in, SOS and field tools.
+- **Trip readiness:** a **Ready** card before you leave says what's left to fix, such as offline maps or SOS contacts.
+- **SALUTE and 9-Line reports** from the SOS panel and the check-in card, with your position and the time filled in.
+- **Team tracking** on a private channel during a trip, **Day replay** of where everyone went, and **zone and off-trail alerts**.
+- **Checklists** that work offline, with timestamped records you can export.
+- **SOS on the lock screen** when app lock is on, and an SOS keeps going after the app restarts.
 - **Android home-screen widget:** radio status, battery and unread count, with one-tap Check in and SOS.
 
 ### Messaging
@@ -64,6 +70,11 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **Delivery details:** long-press a message you sent to see why it did or didn't get through: a plain-words verdict over a timeline of attempts, route and confirmation, with Retry.
 - **Stop retrying** a direct message that's still being sent, and a note in a new chat that the other person has to add you as a contact before they can read and answer.
 - **Drafts** kept for each chat.
+- **Reply to a message** (shown as a quote), **@mentions** with suggestions, and **block** a sender on a channel.
+- **Reply from the notification**, **forward** a message, and **schedule** one up to 30 days ahead.
+- **Offline queue:** messages written while disconnected go out when your radio reconnects.
+- **Not delivered** on a node's row when your last message didn't get through, with a fix one tap away.
+- **Airtime estimate** while you type, and **per-channel notifications** (all, mentions only or muted).
 - **Share your position or a contact** from the message box. Received contacts can be added in one tap, tapping a `meshcore://` contact link in another app opens it in NOTORYX Core, and **Add contact from clipboard** accepts links, adverts (even wrapped across lines) and bare public keys.
 - **Discovered contacts:** add one with a tap, or long-press to pick several (or **Add all shown**) and add them together, up to the room left on your radio.
 - **Region tags:** a channel post scoped to a region shows it next to the time, for example **📍 ct**.
@@ -85,6 +96,13 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **Antenna coverage:** see where an antenna at a chosen height could reach over the terrain.
 - **Line-of-sight checks** between two points.
 - **Coverage capture sessions** you can record, review and export.
+- **Line of sight with the Fresnel zone** shaded, so you can see when a path is clear of the ground but still too close to it.
+- **Waypoints and routes:** save places, import GPX, KML or GeoJSON, and see them on the map. **Offline trail routing and place search** from OpenStreetMap data you download.
+- **Compass to any node** ("Point me to it") from the map, the Nodes list and the path tools.
+- **Node journal**, a **Timeline** of messages, new nodes, signal and places, a **network** view of the path graph, **route view** with the signal on each link, and shareable **trace cards**.
+- **Mesh health** grade, route warnings, and alerts when a favorite repeater goes quiet or a new one appears.
+- Coordinates as decimal degrees, DMS, MGRS, UTM or Maidenhead.
+- **Map as a list** for screen readers, and **Favorites only** on the map.
 - **Field stats:** live mesh counts and contact activity.
 
 ### MQTT bridge (optional)
@@ -95,6 +113,7 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - Reconnects on its own when your network comes back.
 
 ### Your radios
+- **Several radios at once:** each keeps its own messages, queue and unread count, and each reconnects at launch.
 - Connect over **Bluetooth, USB or TCP/IP**. Turn on **Connect to my radio automatically** to reconnect to your last radio when the app opens. A dropped link reconnects on its own on every transport.
 - **Connections dashboard:** radio and MQTT status side by side, device and firmware details, and a clear prompt when Bluetooth is off.
 - Radio overview with battery, firmware and LoRa settings, live radio stats and a noise-floor chart.
@@ -108,19 +127,25 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **Diagnostics:** every radio metric, channel, GPS fix and storage figure in one place; tap a value to copy it.
 - **Command line and Wi-Fi setup** for your own radio. With permission, you can also use a trusted contact's command line.
 - **Favorites back in range:** a notification when a favorite is heard again after a quiet spell (6 hours by default).
+- **Nearby repeater test**, **battery watch** (30 days of each repeater's voltage, with a trend and timed checks), **identity key backup**, a **firmware update guide** (the app never flashes firmware itself) and a list of which features your radio supports.
+- **Automation rules:** triggers like low battery, a time of day, an area, a node going quiet or a message arriving, combined with AND or OR, that post a notification, send a message or call an opt-in webhook.
 - **Field tools:** repeater ping (signal both ways), antenna hunt (clicks faster as a repeater gets louder), Repeater IDs, Region setup (US and Canada region trees) and a field guide.
 - Join a community by scanning its QR code.
 
-### Backups and everyday comfort
-- **Encrypted backup** of settings, contacts and keys, with optional chat history.
+### Privacy, backups and everyday comfort
+- **App lock** with fingerprint, face or screen lock, and optional **encrypted storage** for history, contacts, channel keys, waypoints and drafts.
+- **Encrypted backup and restore** of settings, contacts and keys, with your message history (merged on restore). A restore is all or nothing.
+- **Team setup:** share radio settings, channels, waypoints and routes by QR code or file, passphrase-encrypted.
+- **Community moderation** (off by default): report spam to human moderators.
 - **Battery saver**, adjustable refresh rate and app-icon shortcuts.
-- **Five themes:** Blaze (default), Autumn Frost (slate, pine and amber), Bubble Gum (rose and hot pink), Red light (keeps your night vision) and Okabe-Ito (color-blind safe, on black), all checked for readable contrast.
+- **Eight themes:** Blaze (default), Neon Anarchy, Tactical, Pink Overload, Bare Beauty, Okabe-Ito (color-blind safe), Night Ops (low light) and Seasonal, all meeting WCAG AA contrast. An optional second theme for dark mode, and your own **background** (color, gradient, color blend or photo).
+- **Node looks:** give any node a color or photo.
 - **Color-blind safe colors:** node types on the map and in lists (people, repeaters, rooms and sensors) use the [Okabe-Ito palette](https://jfly.uni-koeln.de/color/), whose colors stay distinct with the common forms of color blindness. The **Okabe-Ito** theme goes further: good, warning and bad signal are blue-green, yellow and vermillion instead of green and red.
 
   | Orange | Sky blue | Bluish green | Yellow | Blue | Vermillion | Reddish purple | Black |
   |---|---|---|---|---|---|---|---|
   | `#E69F00` | `#56B4E9` | `#009E73` | `#F0E442` | `#0072B2` | `#D55E00` | `#CC79A7` | `#000000` |
-- Available in **18 languages**. A few screens (parts of bot settings and the local mesh settings banner) are still in English only.
+- Available in **18 languages**.
 
 <p align="center">
   <img src="images/routes.png" width="190" alt="Route Intelligence with the best repeaters near you">
@@ -135,24 +160,38 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 </p>
 
 <p align="center">
-  <img src="images/home.png" width="150" alt="Blaze theme">
-  <img src="images/home_autumn_frost.png" width="150" alt="Autumn Frost theme">
-  <img src="images/home_bubble_gum.png" width="150" alt="Bubble Gum theme">
-  <img src="images/home_red_light.png" width="150" alt="Red light theme">
-  <img src="images/home_okabe_ito.png" width="150" alt="Okabe-Ito color-blind safe theme">
+  <img src="images/background.png" width="190" alt="Background: theme glow, color, gradient, color blend or your own photo behind the glass">
+  <img src="images/theme_settings.png" width="190" alt="Theme settings with a different theme in dark mode">
+  <img src="images/checklist_run.png" width="190" alt="Before a trip checklist">
+  <img src="images/firmware_guide.png" width="190" alt="Guided firmware update">
 </p>
-<p align="center"><em>Blaze · Autumn Frost · Bubble Gum · Red light · Okabe-Ito</em></p>
+<p align="center"><em>Captured on a phone running 10.1.0-rc.5 with the Night Ops theme.</em></p>
 
-> NOTORYX Core is a pre-release. It's tested in automated tests and a mesh simulator but not yet on a wide range of phones and radios. It is not a replacement for an emergency service or a satellite messenger.
+<p align="center">
+  <img src="images/home.png" width="150" alt="Blaze theme">
+  <img src="images/home_neon_anarchy.png" width="150" alt="Neon Anarchy theme">
+  <img src="images/home_tactical.png" width="150" alt="Tactical theme">
+  <img src="images/home_pink_overload.png" width="150" alt="Pink Overload theme">
+</p>
+<p align="center">
+  <img src="images/home_bare_beauty.png" width="150" alt="Bare Beauty theme">
+  <img src="images/home_okabe_ito.png" width="150" alt="Okabe-Ito color-blind safe theme">
+  <img src="images/home_night_ops.png" width="150" alt="Night Ops low-light theme">
+  <img src="images/home_seasonal.png" width="150" alt="Seasonal theme in autumn">
+</p>
+<p align="center"><em>Blaze · Neon Anarchy · Tactical · Pink Overload · Bare Beauty · Okabe-Ito · Night Ops · Seasonal</em></p>
+
+> NOTORYX Core 10.0.0 is the first stable release. It's tested in automated tests and a mesh simulator but not yet on a wide range of phones and radios. It is not a replacement for an emergency service or a satellite messenger.
 
 ## Which file do I need?
 
 | Platform | File | Notes |
 |---|---|---|
 | Android (ARM64 phones) | `NOTORYX-Core-…-arm64-v8a.apk` | Signed with the NOTORYX Core release key |
+| Android, Lite | `NOTORYX-Core-Lite-…-arm64-v8a.apk` | Smaller, with no closed-source parts: no on-device translation, picture messages, camera QR scanner or phone GPS. Same key |
 | macOS (Intel and Apple silicon, macOS 14+) | `NOTORYX-Core-…-macOS-universal.zip` | Not notarized by Apple (see below) |
 
-Each release also has `SHA256SUMS-Android.txt` and `SHA256SUMS-macOS.txt`. To check a download: `shasum -a 256 <file>`.
+Each release also has `SHA256SUMS-Android.txt` and `SHA256SUMS-macOS.txt`, and from 10.1.0-rc.2 a `RELEASE-MANIFEST.json` tying each file to its source commit and test run. To check a download: `shasum -a 256 <file>`.
 
 ## Install on Android
 
