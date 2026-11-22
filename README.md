@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/icon.png" width="120" alt="NOTORYX app icon">
+  <img src="images/banner.png" width="100%" alt="NOTORYX Core: Engineered for independence.">
 </p>
 
 # NOTORYX Core downloads
@@ -14,17 +14,25 @@ This repository hosts NOTORYX Core builds for Android and Mac. Get the latest fr
 
 New since rc.47: **multiple radios**, **notifications for each channel** (all, mentions only or muted), an **airtime estimate** while you type, **KML and GeoJSON import**, a **firmware update guide**, and lower CPU use over USB on Mac. Not yet tested on real radios or phones.
 
-**Test build: [10.1.0-rc.10](../../releases/tag/v10.1.0-rc.10)** (19 November 2026) lets the search in **More** find the message filter and notification settings. rc.9 made the range rings fill more of the map, and with rc.7 and rc.8 the 10.1.0 line fixes the Android start-screen hang and adds a **live traffic map** that draws heard packets hop by hop, a **stale-node badge** for nodes that have gone quiet, **range rings** around your position on the map, an on-device **spam filter** for channel chats (SOS and emergency posts are never filtered), and a button to **reset routing settings** to their defaults. rc.9 was checked on one Android phone with one radio (traffic map, range rings, Mark as spam / Not spam, reset routing); the spam filter hasn't yet caught a real message on its own, and several radios at once haven't been tried. From rc.1 to rc.6 it also has a **compass that points to any node**, a **photo or color for any node**, your own **background** behind the glass panels, the **Fresnel zone** on line of sight, **failed sends marked in the Nodes list**, chats that stay open while a dropped radio link reconnects, **Map + coverage**, **SOS resume** after a restart, identity key backup, a map-as-a-list view for screen readers, a safer offline queue, and each nearby repeater listed once. 10.0.0 stays the one to rely on.
+**Test build: [10.1.0-rc.16](../../releases/tag/v10.1.0-rc.16)** (21 November 2026), Android only for now. The 10.1.0 test builds add:
 
-**Coming in the next build: SARNEG code words.** Send grids, frequencies and times as letters from a code word your team agrees on, and tap a received `[SARNEG]` message to decode it. The same format and code-word QR code work in every NOTORYX app. It keeps numbers away from a casual listener; it isn't encryption. [What SARNEG is and why we added it](https://meshmayhem.org/notoryx/#sarneg).
+- **SARNEG code words** (rc.11): send grids, frequencies and times as letters from a code word your team agrees on, and tap a received `[SARNEG]` message to decode it. The same format and code-word QR code work in every NOTORYX app. It keeps numbers away from a casual listener; it isn't encryption. The SARNEG screen blocks screenshots (rc.15). [What SARNEG is and why we added it](https://meshmayhem.org/notoryx/#sarneg).
+- **Wardrive, rebuilt** (rc.15, colours fixed in rc.16): Discovery, Trace, Channel and Hybrid modes, free coverage from packets you hear anyway, 100 m or 300 m coverage squares, per-repeater stats, a noise-floor graph and export to GPX, KML, CSV or GeoJSON.
+- **Up to 5,000 remembered nodes** (rc.13, rc.14), including contacts your radio drops when its list is full, and **Import nodes** from a file or the clipboard.
+- A **live traffic map** that draws heard packets hop by hop, a **stale-node badge**, **range rings**, an on-device **spam filter** for channel chats (SOS and emergency posts are never filtered) and **reset routing** (rc.7 to rc.10).
+- From rc.1 to rc.6: a **compass that points to any node**, a **photo or color for any node**, your own **background**, the **Fresnel zone** on line of sight, **failed sends marked in the Nodes list**, chats that stay open while a dropped link reconnects, **Map + coverage**, **SOS resume** after a restart, identity key backup and a map-as-a-list view for screen readers.
+
+rc.16 was checked on one Android phone (wardrive screen, SARNEG screenshot block); wardrive hasn't been driven with a radio yet. The newest Mac build is [10.1.0-rc.10](../../releases/tag/v10.1.0-rc.10). 10.0.0 stays the one to rely on.
+
+**Coming in the next build: the BLACKOUT look.** A new steel eagle-N app icon and a matte-black **BLACKOUT** theme as the default, as in the screenshots here. Tactical, Okabe-Ito, Night Ops and Seasonal stay; Blaze, Neon Anarchy, Pink Overload and Bare Beauty are retired, and anyone using them moves to BLACKOUT.
 
 **Report a problem:** [open an issue](../../issues).
 
 <p align="center">
-  <img src="images/home.png" width="190" alt="Home: radio readouts, check-in, SOS and field tools on frosted glass">
+  <img src="images/home.png" width="190" alt="Home: radio readouts, check-in, hold for SOS and field tools">
   <img src="images/chats.png" width="190" alt="Chats: channels and direct conversations">
   <img src="images/nodes.png" width="190" alt="Nodes: repeaters, people, rooms and sensors with hop counts">
-  <img src="images/more.png" width="190" alt="More: every tool and setting, searchable">
+  <img src="images/traffic_map.png" width="190" alt="Live traffic map: a packet's route drawn hop by hop">
 </p>
 
 ## Why NOTORYX Core?
@@ -37,8 +45,9 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **It gets your radio on the right settings.** MeshCore's community presets (USA, Canada, EU/UK, Australia and more) are built in, with the one for your country suggested first. It also knows settings local meshes have agreed on, and warns you when your radio doesn't match.
 - **It helps you find people.** A directory of public channels, channels heard on air that you haven't joined, and the #channels active online right now, each one tap to join.
 - **It reaches past the horizon.** The optional MQTT bridge shows MeshCore traffic from beyond radio range, clearly labeled **via MQTT** so it never pretends to be a radio repeat.
-- **It shows you where the mesh reaches.** Wardrive maps which repeaters hear you as you drive or hike, and telemetry badges put battery, temperature, humidity and pressure right on the map.
-- **It looks the part.** The Frosted ember look puts see-through glass over a warm glow, or over your own color, gradient or photo. Eight themes, including Night Ops to keep your night vision, a Seasonal theme and a color-blind safe Okabe-Ito theme, all checked for readable contrast.
+- **It shows you where the mesh reaches.** Wardrive maps which repeaters hear you as you drive or hike, square by square, and telemetry badges put battery, temperature, humidity and pressure right on the map.
+- **It keeps numbers off the air.** SARNEG code words turn grids, frequencies and times into letters your team can decode with one tap.
+- **It looks the part.** The BLACKOUT look (next build) is matte black, steel and frost, with see-through glass panels over a soft glow, or over your own color, gradient or photo. Five themes, including Night Ops to keep your night vision, a Seasonal theme and a color-blind safe Okabe-Ito theme, all checked for readable contrast.
 - **It runs more than one radio.** Stay connected to a handheld and a base station at once and switch between them.
 - **It speaks your language.** 18 languages.
 - **It runs your whole kit.** Repeaters, room servers, sensors, access control, a command line and Wi-Fi setup are all in one app.
@@ -79,6 +88,8 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **Airtime estimate** while you type, and **per-channel notifications** (all, mentions only or muted).
 - **Share your position or a contact** from the message box. Received contacts can be added in one tap, tapping a `meshcore://` contact link in another app opens it in NOTORYX Core, and **Add contact from clipboard** accepts links, adverts (even wrapped across lines) and bare public keys.
 - **Discovered contacts:** add one with a tap, or long-press to pick several (or **Add all shown**) and add them together, up to the room left on your radio.
+- **Remembers up to 5,000 heard nodes**, including contacts your radio drops when its list is full. **Import nodes** reads a JSON or CSV list, contact links, adverts or public keys from a file or the clipboard.
+- **SARNEG code words:** a SARNEG button in the message box codes the numbers you typed, a received `[SARNEG]` message gets a tap-to-decode line, and the code word can be shared by QR code. Not encryption. The SARNEG screen blocks screenshots.
 - **Region tags:** a channel post scoped to a region shows it next to the time, for example **📍 ct**.
 - **Read messages aloud** (optional) and on-device translation.
 - **Area-limited channel messages** that stay within a radius of you (needs radios running flood-corridor firmware).
@@ -88,7 +99,7 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 ### Maps, paths and coverage
 - Live mesh map with **offline map packs**, and a button to jump to your position (phone GPS, or your radio's).
 - **Map telemetry:** battery, temperature, humidity or pressure badges on the map. Readings dim after an hour and hide after a day, and the map remembers your choice.
-- **Wardrive:** ping every 20 s to 2 min as you move and map which repeaters heard you, and how well, both ways. Pings use your phone's GPS, the map follows you, and drives are saved.
+- **Wardrive:** map which repeaters heard you as you drive or hike, and how well, both ways. **Discovery** (zero-hop, the default), **Trace** (one repeater, both ways), **Channel** (a short post to #wardriving that floods the mesh, never the default, and no position goes on air) and **Hybrid**. Packets your radio hears anyway are mapped at no airtime cost, pings wait until you've moved, and the map is coloured in 100 m or 300 m squares with per-repeater stats. Export GPX, KML, CSV or GeoJSON, optionally keep running with the screen off, and drives are saved.
 - **Network scan** (More → Networks): find MeshCore networks nearby. A radio only hears networks on its exact settings, so a scan switches yours to each network in turn and switches back. **Quick** (the default) sends one zero-hop discover ping on each and listens about 8 s, so a scan takes well under a minute; **Thorough** only listens, 30–90 s each, and also finds networks without a repeater in range. Each network heard is logged with the time, place, signal and its nodes, so you can map it, export CSV or GPX, save it, or join it with one tap. You're off your own mesh while it scans, so it won't run during an SOS or a trip.
 - **Path graph:** every path you've heard, drawn as flows from far repeaters to you, with the busiest repeaters ranked. Short 1-byte hops are matched to a specific repeater using longer paths. Tap a repeater in the chart or the list to see where its traffic comes from and goes.
 - **RX log** (More → Tools): every packet your radio hears, live, with type, route, hops and signal. Filter, pause, export CSV, or tap one for its path and raw bytes. Kept in memory only.
@@ -140,7 +151,7 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **Team setup:** share radio settings, channels, waypoints and routes by QR code or file, passphrase-encrypted.
 - **Community moderation** (off by default): report spam to human moderators.
 - **Battery saver**, adjustable refresh rate and app-icon shortcuts.
-- **Eight themes:** Blaze (default), Neon Anarchy, Tactical, Pink Overload, Bare Beauty, Okabe-Ito (color-blind safe), Night Ops (low light) and Seasonal, all meeting WCAG AA contrast. An optional second theme for dark mode, and your own **background** (color, gradient, color blend or photo).
+- **Five themes:** BLACKOUT (default from the next build; matte black, steel and frost, with signal, warning and SOS colors kept), Tactical, Okabe-Ito (color-blind safe), Night Ops (low light) and Seasonal, all meeting WCAG AA contrast. An optional second theme for dark mode, and your own **background** (color, gradient, color blend or photo).
 - **Node looks:** give any node a color or photo.
 - **Color-blind safe colors:** node types on the map and in lists (people, repeaters, rooms and sensors) use the [Okabe-Ito palette](https://jfly.uni-koeln.de/color/), whose colors stay distinct with the common forms of color blindness. The **Okabe-Ito** theme goes further: good, warning and bad signal are blue-green, yellow and vermillion instead of green and red.
 
@@ -150,38 +161,39 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - Available in **18 languages**.
 
 <p align="center">
-  <img src="images/routes.png" width="190" alt="Route Intelligence with the best repeaters near you">
-  <img src="images/path_graph.png" width="190" alt="Path graph showing how messages reach you">
-  <img src="images/access_control.png" width="190" alt="Repeater access control with admin, read & write and read-only roles">
+  <img src="images/trip.png" width="190" alt="Trip and field operations: plan, start a trip and send check-ins">
+  <img src="images/sarneg.png" width="190" alt="SARNEG code word setup">
+  <img src="images/wardrive.png" width="190" alt="Wardrive: modes, coverage squares and legend">
+  <img src="images/map_coverage.png" width="190" alt="Map + coverage: every coverage and map tool in one place">
+</p>
+
+<p align="center">
+  <img src="images/channel_chat.png" width="190" alt="A channel chat with repeats and delivery ticks">
+  <img src="images/dm_chat.png" width="190" alt="A direct chat with delivery status">
+  <img src="images/more.png" width="190" alt="More: every tool and setting, searchable">
   <img src="images/settings.png" width="190" alt="Settings">
 </p>
 
 <p align="center">
-  <img src="images/channel_directory.png" width="190" alt="Channel directory: local, emergency and active channels">
+  <img src="images/routes.png" width="190" alt="Route Intelligence with the best repeaters near you">
+  <img src="images/path_graph.png" width="190" alt="Path graph showing how messages reach you">
   <img src="images/networks.png" width="190" alt="Networks: scan for nearby networks and keep a log">
+  <img src="images/battery_watch.png" width="190" alt="Battery watch: repeater battery history and trend">
 </p>
 
 <p align="center">
-  <img src="images/background.png" width="190" alt="Background: theme glow, color, gradient, color blend or your own photo behind the glass">
-  <img src="images/theme_settings.png" width="190" alt="Theme settings with a different theme in dark mode">
-  <img src="images/checklist_run.png" width="190" alt="Before a trip checklist">
-  <img src="images/firmware_guide.png" width="190" alt="Guided firmware update">
+  <img src="images/channel_directory.png" width="190" alt="Channel directory: local, emergency and active channels">
+  <img src="images/access_control.png" width="190" alt="Repeater access control with admin, read & write and read-only roles">
 </p>
-<p align="center"><em>Captured on a phone running 10.1.0-rc.5 with the Night Ops theme.</em></p>
 
 <p align="center">
-  <img src="images/home.png" width="150" alt="Blaze theme">
-  <img src="images/home_neon_anarchy.png" width="150" alt="Neon Anarchy theme">
+  <img src="images/home.png" width="150" alt="BLACKOUT theme">
   <img src="images/home_tactical.png" width="150" alt="Tactical theme">
-  <img src="images/home_pink_overload.png" width="150" alt="Pink Overload theme">
-</p>
-<p align="center">
-  <img src="images/home_bare_beauty.png" width="150" alt="Bare Beauty theme">
   <img src="images/home_okabe_ito.png" width="150" alt="Okabe-Ito color-blind safe theme">
   <img src="images/home_night_ops.png" width="150" alt="Night Ops low-light theme">
   <img src="images/home_seasonal.png" width="150" alt="Seasonal theme in autumn">
 </p>
-<p align="center"><em>Blaze · Neon Anarchy · Tactical · Pink Overload · Bare Beauty · Okabe-Ito · Night Ops · Seasonal</em></p>
+<p align="center"><em>BLACKOUT · Tactical · Okabe-Ito · Night Ops · Seasonal. Screenshots show the next build's look, rendered from the app with sample data rather than captured on a phone.</em></p>
 
 > NOTORYX Core 10.0.0 is the first stable release. It's tested in automated tests and a mesh simulator but not yet on a wide range of phones and radios. It is not a replacement for an emergency service or a satellite messenger.
 
