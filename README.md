@@ -14,7 +14,7 @@ This repository hosts NOTORYX Core builds for Android and Mac. Get the latest fr
 
 New since rc.47: **multiple radios**, **notifications for each channel** (all, mentions only or muted), an **airtime estimate** while you type, **KML and GeoJSON import**, a **firmware update guide**, and lower CPU use over USB on Mac. Not yet tested on real radios or phones.
 
-**Test build: [10.1.0-rc.16](../../releases/tag/v10.1.0-rc.16)** (21 November 2026), Android only for now. The 10.1.0 test builds add:
+**Test build: [10.1.0-rc.17](../../releases/tag/v10.1.0-rc.17)** (22 November 2026), Android only for now. It brings the **BLACKOUT look**: a new steel eagle-N app icon and a matte-black **BLACKOUT** theme as the default, as in the screenshots here. Tactical, Okabe-Ito, Night Ops and Seasonal stay; Blaze, Neon Anarchy, Pink Overload and Bare Beauty are retired, and anyone using them moves to BLACKOUT. It also fixes repeater clock sync and stops removed contacts coming back. The 10.1.0 test builds also add:
 
 - **SARNEG code words** (rc.11): send grids, frequencies and times as letters from a code word your team agrees on, and tap a received `[SARNEG]` message to decode it. The same format and code-word QR code work in every NOTORYX app. It keeps numbers away from a casual listener; it isn't encryption. The SARNEG screen blocks screenshots (rc.15). [What SARNEG is and why we added it](https://meshmayhem.org/notoryx/#sarneg).
 - **Wardrive, rebuilt** (rc.15, colours fixed in rc.16): Discovery, Trace, Channel and Hybrid modes, free coverage from packets you hear anyway, 100 m or 300 m coverage squares, per-repeater stats, a noise-floor graph and export to GPX, KML, CSV or GeoJSON.
@@ -22,9 +22,7 @@ New since rc.47: **multiple radios**, **notifications for each channel** (all, m
 - A **live traffic map** that draws heard packets hop by hop, a **stale-node badge**, **range rings**, an on-device **spam filter** for channel chats (SOS and emergency posts are never filtered) and **reset routing** (rc.7 to rc.10).
 - From rc.1 to rc.6: a **compass that points to any node**, a **photo or color for any node**, your own **background**, the **Fresnel zone** on line of sight, **failed sends marked in the Nodes list**, chats that stay open while a dropped link reconnects, **Map + coverage**, **SOS resume** after a restart, identity key backup and a map-as-a-list view for screen readers.
 
-rc.16 was checked on one Android phone (wardrive screen, SARNEG screenshot block); wardrive hasn't been driven with a radio yet. The newest Mac build is [10.1.0-rc.10](../../releases/tag/v10.1.0-rc.10). 10.0.0 stays the one to rely on.
-
-**Coming in the next build: the BLACKOUT look.** A new steel eagle-N app icon and a matte-black **BLACKOUT** theme as the default, as in the screenshots here. Tactical, Okabe-Ito, Night Ops and Seasonal stay; Blaze, Neon Anarchy, Pink Overload and Bare Beauty are retired, and anyone using them moves to BLACKOUT.
+rc.17 hasn't been checked on a phone or with radios yet; rc.16 was checked on one Android phone (wardrive screen, SARNEG screenshot block), and wardrive hasn't been driven with a radio yet. The newest Mac build is [10.1.0-rc.10](../../releases/tag/v10.1.0-rc.10). 10.0.0 stays the one to rely on.
 
 **Report a problem:** [open an issue](../../issues).
 
@@ -47,7 +45,7 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **It reaches past the horizon.** The optional MQTT bridge shows MeshCore traffic from beyond radio range, clearly labeled **via MQTT** so it never pretends to be a radio repeat.
 - **It shows you where the mesh reaches.** Wardrive maps which repeaters hear you as you drive or hike, square by square, and telemetry badges put battery, temperature, humidity and pressure right on the map.
 - **It keeps numbers off the air.** SARNEG code words turn grids, frequencies and times into letters your team can decode with one tap.
-- **It looks the part.** The BLACKOUT look (next build) is matte black, steel and frost, with see-through glass panels over a soft glow, or over your own color, gradient or photo. Five themes, including Night Ops to keep your night vision, a Seasonal theme and a color-blind safe Okabe-Ito theme, all checked for readable contrast.
+- **It looks the part.** The BLACKOUT look (from rc.17) is matte black, steel and frost, with see-through glass panels over a soft glow, or over your own color, gradient or photo. Five themes, including Night Ops to keep your night vision, a Seasonal theme and a color-blind safe Okabe-Ito theme, all checked for readable contrast.
 - **It runs more than one radio.** Stay connected to a handheld and a base station at once and switch between them.
 - **It speaks your language.** 18 languages.
 - **It runs your whole kit.** Repeaters, room servers, sensors, access control, a command line and Wi-Fi setup are all in one app.
@@ -151,7 +149,7 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **Team setup:** share radio settings, channels, waypoints and routes by QR code or file, passphrase-encrypted.
 - **Community moderation** (off by default): report spam to human moderators.
 - **Battery saver**, adjustable refresh rate and app-icon shortcuts.
-- **Five themes:** BLACKOUT (default from the next build; matte black, steel and frost, with signal, warning and SOS colors kept), Tactical, Okabe-Ito (color-blind safe), Night Ops (low light) and Seasonal, all meeting WCAG AA contrast. An optional second theme for dark mode, and your own **background** (color, gradient, color blend or photo).
+- **Five themes:** BLACKOUT (default from rc.17; matte black, steel and frost, with signal, warning and SOS colors kept), Tactical, Okabe-Ito (color-blind safe), Night Ops (low light) and Seasonal, all meeting WCAG AA contrast. An optional second theme for dark mode, and your own **background** (color, gradient, color blend or photo).
 - **Node looks:** give any node a color or photo.
 - **Color-blind safe colors:** node types on the map and in lists (people, repeaters, rooms and sensors) use the [Okabe-Ito palette](https://jfly.uni-koeln.de/color/), whose colors stay distinct with the common forms of color blindness. The **Okabe-Ito** theme goes further: good, warning and bad signal are blue-green, yellow and vermillion instead of green and red.
 
@@ -193,7 +191,7 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
   <img src="images/home_night_ops.png" width="150" alt="Night Ops low-light theme">
   <img src="images/home_seasonal.png" width="150" alt="Seasonal theme in autumn">
 </p>
-<p align="center"><em>BLACKOUT · Tactical · Okabe-Ito · Night Ops · Seasonal. Screenshots show the next build's look, rendered from the app with sample data rather than captured on a phone.</em></p>
+<p align="center"><em>BLACKOUT · Tactical · Okabe-Ito · Night Ops · Seasonal. Screenshots show the rc.17 look, rendered from the app with sample data rather than captured on a phone.</em></p>
 
 > NOTORYX Core 10.0.0 is the first stable release. It's tested in automated tests and a mesh simulator but not yet on a wide range of phones and radios. It is not a replacement for an emergency service or a satellite messenger.
 
