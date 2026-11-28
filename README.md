@@ -14,15 +14,18 @@ This repository hosts NOTORYX Core builds for Android and Mac. Get the latest fr
 
 New since rc.47: **multiple radios**, **notifications for each channel** (all, mentions only or muted), an **airtime estimate** while you type, **KML and GeoJSON import**, a **firmware update guide**, and lower CPU use over USB on Mac. Not yet tested on real radios or phones.
 
-**Test build: [10.1.0-rc.17](../../releases/tag/v10.1.0-rc.17)** (22 November 2026), Android only for now. It brings the **BLACKOUT look**: a new steel eagle-N app icon and a matte-black **BLACKOUT** theme as the default, as in the screenshots here. Tactical, Okabe-Ito, Night Ops and Seasonal stay; Blaze, Neon Anarchy, Pink Overload and Bare Beauty are retired, and anyone using them moves to BLACKOUT. It also fixes repeater clock sync and stops removed contacts coming back. The 10.1.0 test builds also add:
+**Test build: [10.1.0-rc.28](../../releases/tag/v10.1.0-rc.28)** (28 November 2026), Android and Mac. The 10.1.0 test builds add:
 
+- **Signal details on every node** (rc.28): **RSSI and SNR** shown on the Nodes list and node detail, a **reachability label** so you can see at a glance whether a node can be reached right now, an **RF-neighbours panel** that lists nodes your radio hears directly, a **hop count badge** on each row, and **recency** showing how long ago a node was last heard.
+- **Coverage map** (rc.23+): one tap to submit your coverage data to [coverage.meshmayhem.org](https://coverage.meshmayhem.org). No account needed.
+- **BLACKOUT look** (rc.17): a new steel eagle-N app icon and a matte-black **BLACKOUT** theme as the default, as in the screenshots here. Tactical, Okabe-Ito, Night Ops and Seasonal stay; Blaze, Neon Anarchy, Pink Overload and Bare Beauty are retired, and anyone using them moves to BLACKOUT.
 - **SARNEG code words** (rc.11): send grids, frequencies and times as letters from a code word your team agrees on, and tap a received `[SARNEG]` message to decode it. The same format and code-word QR code work in every NOTORYX app. It keeps numbers away from a casual listener; it isn't encryption. The SARNEG screen blocks screenshots (rc.15). [What SARNEG is and why we added it](https://meshmayhem.org/notoryx/#sarneg).
 - **Wardrive, rebuilt** (rc.15, colours fixed in rc.16): Discovery, Trace, Channel and Hybrid modes, free coverage from packets you hear anyway, 100 m or 300 m coverage squares, per-repeater stats, a noise-floor graph and export to GPX, KML, CSV or GeoJSON.
 - **Up to 5,000 remembered nodes** (rc.13, rc.14), including contacts your radio drops when its list is full, and **Import nodes** from a file or the clipboard.
 - A **live traffic map** that draws heard packets hop by hop, a **stale-node badge**, **range rings**, an on-device **spam filter** for channel chats (SOS and emergency posts are never filtered) and **reset routing** (rc.7 to rc.10).
 - From rc.1 to rc.6: a **compass that points to any node**, a **photo or color for any node**, your own **background**, the **Fresnel zone** on line of sight, **failed sends marked in the Nodes list**, chats that stay open while a dropped link reconnects, **Map + coverage**, **SOS resume** after a restart, identity key backup and a map-as-a-list view for screen readers.
 
-rc.17 hasn't been checked on a phone or with radios yet; rc.16 was checked on one Android phone (wardrive screen, SARNEG screenshot block), and wardrive hasn't been driven with a radio yet. The newest Mac build is [10.1.0-rc.10](../../releases/tag/v10.1.0-rc.10). 10.0.0 stays the one to rely on.
+rc.27 was installed and checked on Android and Mac. Radio tests for the newest builds are still pending. 10.0.0 stays the one to rely on.
 
 **Report a problem:** [open an issue](../../issues).
 
@@ -102,8 +105,9 @@ NOTORYX Core turns your phone or Mac and a [MeshCore](https://meshcore.io/) radi
 - **Path graph:** every path you've heard, drawn as flows from far repeaters to you, with the busiest repeaters ranked. Short 1-byte hops are matched to a specific repeater using longer paths. Tap a repeater in the chart or the list to see where its traffic comes from and goes.
 - **RX log** (More → Tools): every packet your radio hears, live, with type, route, hops and signal. Filter, pause, export CSV, or tap one for its path and raw bytes. Kept in memory only.
 - **Route intelligence** that handles 1-, 2- and 3-byte hop IDs, ranks the best repeaters you hear directly, plus path discovery and traces.
+- **Signal details on every node:** RSSI and SNR on the Nodes list and node detail, a **reachability label**, **RF-neighbours panel** (nodes your radio hears directly), **hop count badge** and **recency** (how long ago last heard).
 - **Observer reach:** see which online observers heard your message, how many hops it took and the best signal. Unknown repeaters can be named online. Both use a CoreScope analyzer you choose.
-- **Coverage hexagons:** record where your radio got through and upload to your own endpoints, with a privacy delay. **Track log** with GPX export.
+- **Coverage hexagons:** record where your radio got through and upload to [coverage.meshmayhem.org](https://coverage.meshmayhem.org) or your own endpoints, with a privacy delay. **Track log** with GPX export.
 - **Antenna coverage:** see where an antenna at a chosen height could reach over the terrain.
 - **Line-of-sight checks** between two points.
 - **Coverage capture sessions** you can record, review and export.
